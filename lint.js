@@ -17,9 +17,11 @@ let projectType = {
 };
 
 
-inquirer.prompt([projectType], function(choice) {
-  let targetFileExists = _.find(choice.projectType);
-  if (targetFileExists) {
-      fs.createReadStream(`./lib/${choice.projectType}`).pipe(fs.createWriteStream(choice.projectType));
-  }
-});
+function lintalot() {
+  inquirer.prompt([projectType], function(choice) {
+    let targetFileExists = _.find(choice.projectType);
+    if (targetFileExists) {
+        fs.createReadStream(`./lib/${choice.projectType}`).pipe(fs.createWriteStream(choice.projectType));
+    }
+  });
+}

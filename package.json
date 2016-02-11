@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": "true",
   "author": "Mark Thomas <markthethomas@gmail.com>",
+  "bin": {
+    "favorites": "lint.js"
+  },
   "license": "MIT",
   "dependencies": {
     "inquirer": "^0.12.0",
