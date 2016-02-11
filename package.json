@@ -1,0 +1,11 @@
+{
+  "name": "lintalot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Thomas <mark.thomas@clubw.com>",
+  "license": "MIT"
+}
